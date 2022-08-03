@@ -1,0 +1,20 @@
+.login{
+  background-color: black;
+  min-height: 100vh;
+  
+}
+
+.login label , .login h1 {
+color: white !important;
+opacity: 0.6;
+}
+.login-form{
+    background-color: #1F1F1F;
+}
+
+.login-form input{
+  background-color: #333333 !important;
+  border: none !important;
+  color: white;
+  opacity: 0.5;
+}

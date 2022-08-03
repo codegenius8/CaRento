@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  background-color: azure;
+}
+.bs1 {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+p {
+  margin: 5px !important;
+
+  /* text-align: left; */
+  padding: 0;
+}
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: orangered;
+}
+.header {
+  padding: 10px;
+}
+
+.header .ant-btn {
+  box-shadow: none !important;
+  background-color: white !important;
+  color: orangered !important;
+  border: 1px solid orangered !important;
+  cursor: pointer;
+  margin-right: 20px;
+  padding: 5px 15px !important;
+}
+
+.content {
+  min-height: 90vh;
+}
+
+.car-image {
+  height: 180px;
+  width: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+  transform: translateY(-50px);
+}
+.btn1 {
+  box-shadow: none !important;
+  background-color: white !important;
+  color: orangered !important;
+  border: 1px solid orangered !important;
+  cursor: pointer;
+  margin-right: 20px;
+  padding: 5px 15px !important;
+}
+
+button{
+  padding: 3px 10px !important;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+}
+
+.car-content {
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.car {
+  border-radius: 5px;
+  margin-top: 100px;
+  height: 160px;
+  transition: 0.3s;
+}
+.car:hover {
+  height: 220px;
+}
+
+.car:hover > .car-content {
+  opacity: 1;
+  transform: translateY(-40px);
+}
+
+svg{
+  height: 20px !important;
+  width: 20px !important;
+}
