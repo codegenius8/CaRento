@@ -12,11 +12,6 @@ app.use(cors())
 app.use("/api/cars",carRoutes)
 app.use("/api/user",userRoutes)
 
-// app.use((req, res, next) => {
-//   const error = new HttpError('Could not find this route.', 404);
-//   throw error;
-// });
-
 app.use((error,req,res,next)=>{
   const errorStatus = error.status || 500
   const errorMessage  = error.message || "Something went wrong!"
