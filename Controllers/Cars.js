@@ -24,7 +24,7 @@ exports.getAllCars = async (req, res,next) => {
     return next(error)
   }
 };
-
+//car book
 exports.bookCar = async (req, res,next) => {
   const { token } = req.body;
 
