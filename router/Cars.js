@@ -2,7 +2,7 @@ const express = require("express")
 const { getAllCars,bookCar,getAllBookedCars,addCar, editCar, deleteCar } = require("../Controllers/Cars")
 const router = express.Router()
 const checkAuth = require("../middleware/check-auth")
-//Admin routes
+//Admin routes for cars
 router.post("/addcar",addCar)
 router.patch("/editcar",editCar)
 router.post("/deletecar",deleteCar)
