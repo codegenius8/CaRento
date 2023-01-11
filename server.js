@@ -24,7 +24,7 @@ app.use((error,req,res,next)=>{
   
 
 })
-
+// root
 app.get('/',(req,res)=>{
     res.send("hello world 2")
 })
