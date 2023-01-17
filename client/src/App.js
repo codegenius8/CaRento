@@ -10,7 +10,7 @@ import AddCar from "./Pages/AddCar";
 import AdminHome from "./Pages/AdminHome";
 import EditCar from "./Pages/EditCar";
 
-//check login credetials 
+//check login 
 
 function App() {
   const user = localStorage.getItem("user");
