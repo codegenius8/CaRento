@@ -8,7 +8,7 @@ import { getAllcars } from "../Redux/actions/carActios";
 import moment from "moment";
 import { bookCar } from "../Redux/actions/bookAction";
 import StripeCheckout from "react-stripe-checkout";
-
+// book car
 const { RangePicker } = DatePicker;
 const BookingCar = () => {
   const [car, setCar] = useState("");
