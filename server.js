@@ -26,7 +26,7 @@ app.use((error,req,res,next)=>{
 })
 // root
 app.get('/',(req,res)=>{
-    res.send("hello world 2")
+    res.send("Server is running")
 })
 
 app.listen(port,()=> console.log(`node server running on port port ${port}`))
