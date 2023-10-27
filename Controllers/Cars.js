@@ -10,10 +10,6 @@ const logger = require("../logger");
 const { createError } = require('../utills/error');
 
 exports.getAllCars = async (req, res,next) => {
-   
-  // const failed = true;
-
-  // if(failed) return createError(401, "you are not authenticated !")
 
   try {
     const cars = await Cars.find({});
