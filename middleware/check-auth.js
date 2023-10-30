@@ -3,7 +3,7 @@ require("dotenv").config()
 const jwt = require("jsonwebtoken");
 //verify token
 const verifyToken = (req, res, next) => {
-  const token = JSON.parse(req.headers.authorization.split(" ")[1]); // Authorization: 'Bearer TOKEN'
+  const token = JSON.parse(req.headers.authorization.split(" ")[1]); // Authorization: 'Bearer TOKEN', so we split at the space and take the second element
   // console.log("token", process.env.AUTH_SECRETE);
 
   if (!token) {
